@@ -1,14 +1,17 @@
 import './ExpenseItem.css';
 function ExpenseItem() {
+    const dates = '09/01/1992';
+    const insurance = 'Car Insurance';
+    const price = '$256';
     return (
        <div className="expense-item">
-           <div>MArch 2022</div>
+           <div>{dates}</div>
            <div className="expense-item__description">
                <h2>
-                   Car Insurance
+                {insurance}
                </h2>
            
-           <div className="expense-item__price">$256</div>
+           <div className="expense-item__price">{price}</div>
            </div>
        </div>
     );
